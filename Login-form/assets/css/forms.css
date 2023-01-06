@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(219, 226, 226);
+}
+.row{
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+.btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background: white;
+    border: 1px solid;
+    color: black;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+0% { transform: rotate( 0.0deg) }
+10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+20% { transform: rotate(-8.0deg) }
+30% { transform: rotate(14.0deg) }
+40% { transform: rotate(-4.0deg) }
+50% { transform: rotate(10.0deg) }
+60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+} 
+
+
+/* Chat GPT Styling */
+
+form {
+    max-width: 600px;
+    margin: 0;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  
+  .form-group {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: white;
+    border: 1px solid;
+    color: black;
+  }
+  
